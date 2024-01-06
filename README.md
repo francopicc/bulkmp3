@@ -1,4 +1,4 @@
-# BulkMP3 - Descarga de videeos de YouTube en masa.
+# BulkMP3 - Descarga de videos de YouTube en masa.
 
 *No me hago responsable de su uso.*
 
