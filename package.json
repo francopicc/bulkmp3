@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "node-id3": "^0.2.6",
+    "progress": "^2.0.3",
     "readline-sync": "^1.4.10",
     "youtube-metadata-from-url": "^1.0.3",
     "ytdl-mp3": "^3.4.1"

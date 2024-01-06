@@ -21,7 +21,7 @@ async function getVideoMetadata(link) {
 
 async function main() {
   for (let i = 0; i < 5; i++) {
-    const link = readline.question(`Introduce el link del video #${i + 1}. Puedes también pegarlo con CTRL + V.\nSi no deseas descargar más, presiona Enter sin ingresar un enlace.`);
+    const link = readline.question(`Introduce el link del video #${i + 1}. Puedes tambien pegarlo con Click Derecho.\nSi no deseas descargar mas, presiona Enter sin ingresar un enlace.`);
 
     // Salir del bucle si no se proporciona un enlace
     if (!link.trim()) {
@@ -29,7 +29,7 @@ async function main() {
     }
 
     const downloader = new Downloader({
-      outputDir: './output/',
+      outputDir: './output/' || fs.mkdir('output'),
     });
 
     try {
