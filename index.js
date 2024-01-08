@@ -20,8 +20,18 @@ async function getVideoMetadata(link) {
 }
 
 async function main() {
+  console.log(`
+  ____  _    _ _      _  ____  __ _____ ____  
+ |  _ \| |  | | |    | |/ /  \/  |  __ \___ \ 
+ | |_) | |  | | |    | ' /| \  / | |__) |__) |
+ |  _ <| |  | | |    |  < | |\/| |  ___/|__ < 
+ | |_) | |__| | |____| . \| |  | | |    ___) |
+ |____/ \____/|______|_|\_\_|  |_|_|   |____/ 
+                                
+  Creado por Franco Piccirilli. Github: @francopicc
+  `)
   for (let i = 0; i < 5; i++) {
-    const link = readline.question(`Introduce el link del video #${i + 1}. Puedes tambien pegarlo con Click Derecho.\nSi no deseas descargar mas, presiona Enter sin ingresar un enlace.`);
+    const link = readline.question(`Introduce el link del video. Puedes tambien pegarlo con Click Derecho.\nSi no deseas descargar mas, presiona Enter sin ingresar un enlace.`);
 
     // Salir del bucle si no se proporciona un enlace
     if (!link.trim()) {
